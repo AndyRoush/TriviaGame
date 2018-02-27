@@ -17,7 +17,7 @@ var triviaQuestions = [{
     answer: 1
 },{
     question: "What Cheers actor was in 'The Empire Strikes Back?'",
-    answerList: ["John Ratzenberg", "Ted Danson", "George Wendt", "Rhea Pearlman"],
+    answerList: ["John Ratzenberger", "Ted Danson", "George Wendt", "Rhea Pearlman"],
     answer: 0
 },{
     question: "On Three's Company, what is the name 'Chrissy' is short for?",
@@ -61,7 +61,7 @@ var triviaQuestions = [{
     answer: 3
 }];
 
-var gifArray = ['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8', 'question9', 'question10', 'question11', 'question12', 'question13', 'question14', 'question15'];
+var imgArray = ['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8', 'question9', 'question10', 'question11', 'question12', 'question13', 'question14', 'question15'];
 var currentQuestion;
 var correctAnswer;
 var incorrectAnswer;
@@ -71,10 +71,10 @@ var time;
 var answered;
 var userSelect;
 var messages = {
-    correct: "Tubular dude!",
-    incorrect: "SOOORRRYYYYY",
+    correct: "Radical!",
+    incorrect: "Get real, poser!",
     endTime: "Oops. You ran out of time!",
-    finished: "Riteous! Let's check the results, shall we?"
+    finished: "Righteous! Let's see how well you did!"
 }
 
 $('#startBtn').on('click', function() {
@@ -102,7 +102,7 @@ function newGame() {
 function newQuestion(){
     $('#message').empty();
     $('#correctedAnswer').empty();
-    $('#gif').empty();
+    $('#img').empty();
     answered = true;
 
 
@@ -150,7 +150,7 @@ function answerPage() {
 
     var rightAnswerText = triviaQuestions[currentQuestion].answerList[triviaQuestions[currentQuestion].answer];
     var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
-    $('#gif').html('<img src = "assets/images/' + gifArray[currentQuestion] +'.gif" width = "400px">');
+    $('#img').html('<img src = "assets/images/' + imgArray[currentQuestion] +'.jpg" width = "400px">');
     // Checks to see correct, incorrect, or unanswered
     if((userSelect == rightAnswerIndex) && (answered == true)){
         correctAnswer++;
@@ -178,7 +178,7 @@ function scoreboard() {
     $('#timeLeft').empty();
     $('#message').empty();
     $('#correctedAnswer').empty();
-    $('#gif').empty();
+    $('#img').empty();
 
     $('#finalMessage').html(messages.finished);
     $('#correctAnswers').html("Correct Answers: " + correctAnswer);

@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'retro'; /*a name to be used later*/
+    src: url('../fonts/Retro Computer_DEMO.ttf'); /*URL to font*/
+  }
+  @font-face {
+    font-family: '8bit'; /*a name to be used later*/
+    src: url('../fonts/8-Bit Madness.ttf'); /*URL to font*/
+  }
+
+
 body {
     background-image: url("../images/bg4.jpg");
     color: white;
@@ -5,39 +15,79 @@ body {
 .container {
     text-align: center;
     width: 50%;
-    height: 430px;
-    line-height: 70px;
+    height: 100%;
+    line-height: 60px;
     margin-left: 25%;
     font-size: 40px;
+    margin-top: 75px;
     margin-bottom: 200px;
+    background-color: rgba(249, 93, 151, 0.58);
+    border: solid 1px #ff00bc;
+    padding: 30px;
+    box-shadow: 1px 1px 10px 10px rgba(154, 0, 182, 0.19);
+
 }
 
+#startBtn {
+    font-family: 'retro';
+    border: dotted #ffffff 3px;
+}
+
+#startOverBtn {
+    margin: auto;
+    font-family: 'retro';
+    width: 40%;
+}
 
 .btn-primary,.reset{
-    background-color: #ff1af8;
+    background: linear-gradient(#ff1af8, rgb(182, 0, 173));
     color: white;
-    font-family: 'Sigmar One', sans-serif;
     font-size: 30px;
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 35px;
     width: 219px;
 }
 
 .btn-primary:hover, .reset:hover{
-	background-color: #202364;
+	background-color: linear-gradient(#2344ff, rgb(1, 122, 170));
 }
 
-
 h2, #message, #finalMessage{
-	font-family: Sigmar One;
+    font-family: '8bit';
+    font-size: 45px;
+    color: #7ffdb2;
+    margin: 15px;
+}
+
+h3 {
+    font-family: '8bit';
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .thisChoice:hover{
-	background-color: #202364;
+	background-color: rgba(96, 255, 149, 0.637);
 	color: white;
-	padding: 10px;
+    padding: 10px;
+    font-family: '8bit';
 }
 
-#gif{
-	margin: 30px;
+#img{
+    margin: 30px;
+}
+
+#currentQuestion,
+#correctedAnswer {
+    color: #ffffff;
+    font-family: '8bit';
+}
+
+.thisChoice {
+    font-family: '8bit';
+}
+
+#correctAnswers,
+#incorrectAnswers,
+#unanswered {
+    font-family: '8bit';
 }
