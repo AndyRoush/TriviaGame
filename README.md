@@ -1,4 +1,6 @@
-JavaScript Assignment 2
+#JavaScript Assignment 2
+<h3>80's themes Trivia game</h3>
+<h5>Logo custom designed by me in photoshop</h5>
 
 
 Overview
