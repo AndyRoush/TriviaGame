@@ -1,9 +1,9 @@
-#JavaScript Assignment 2
+<h1>JavaScript Assignment 2</h1>
 <h3>80's themes Trivia game</h3>
 <h5>Logo custom designed by me in photoshop</h5>
 
 
-Overview
+<h1>Overview</h1>
 
 In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
 
