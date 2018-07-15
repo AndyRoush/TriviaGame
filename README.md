@@ -2,6 +2,11 @@
 <h3>80's themes Trivia game</h3>
 <h5>Logo custom designed by me in photoshop</h5>
 
+<img src="rimages/trivia1.PNG" width="900">
+<img src="rimages/trivia2.PNG" width="900">
+<img src="rimages/trivia3.PNG" width="900">
+<img src="rimages/trivia4.PNG" width="900">
+
 
 <h1>Overview</h1>
 
